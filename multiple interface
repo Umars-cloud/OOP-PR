@@ -1,0 +1,33 @@
+// First Interface
+interface Printable {
+    void print();
+}
+
+// Second Interface
+interface Showable {
+    void show();
+}
+
+// Class implementing both interfaces
+class Document implements Printable, Showable {
+    // Implementing print() method of Printable interface
+    public void print() {
+        System.out.println("Printing the document...");
+    }
+
+    // Implementing show() method of Showable interface
+    public void show() {
+        System.out.println("Showing the document...");
+    }
+}
+
+public class MultipleInheritanceExample {
+    public static void main(String[] args) {
+        // Creating object of Document class
+        Document doc = new Document();
+
+        // Calling methods from both interfaces
+        doc.print();
+        doc.show();
+    }
+}
