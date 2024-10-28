@@ -1,0 +1,39 @@
+// Superclass
+class Animal {
+    // Method in superclass
+    public void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Subclass 1
+class Dog extends Animal {
+    // Method specific to Dog class
+    public void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+// Subclass 2
+class Cat extends Animal {
+    // Method specific to Cat class
+    public void meow() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class HierarchicalInheritanceExample {
+    public static void main(String[] args) {
+        // Creating object of Dog class
+        Dog dog = new Dog();
+        dog.eat();   // Calling method from superclass
+        dog.bark();  // Calling method from Dog class
+
+        System.out.println();
+
+        // Creating object of Cat class
+        Cat cat = new Cat();
+        cat.eat();   // Calling method from superclass
+        cat.meow();  // Calling method from Cat class
+    }
+}
