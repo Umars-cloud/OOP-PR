@@ -1,0 +1,37 @@
+// Class definition
+class Car {
+    // Attributes (Properties of the class)
+    String make;
+    String model;
+    int year;
+
+    // Constructor to initialize Car object
+    public Car(String make, String model, int year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+
+    // Method to display car details
+    public void displayDetails() {
+        System.out.println("Car Make: " + make);
+        System.out.println("Car Model: " + model);
+        System.out.println("Car Year: " + year);
+    }
+
+    // Method to start the car
+    public void start() {
+        System.out.println(make + " " + model + " is starting...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object of the Car class
+        Car car1 = new Car("Toyota", "Corolla", 2021);
+
+        // Calling methods on the Car object
+        car1.displayDetails();  // Display car details
+        car1.start();           // Start the car
+    }
+}
